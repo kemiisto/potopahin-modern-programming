@@ -5,9 +5,9 @@ int main()
 {
     int n;
     scanf("%d", &n);
-    int d;
+    int d,res=n;
     for (d=1; d<n; d++)
-        if (!(n%d)) n-=d;
-    printf(!n ? "Yes" : "No");
+        if (!(n%d)) res-=d;
+    printf(!res ? "Yes\n" : "No\n");
     return 0;
 }
