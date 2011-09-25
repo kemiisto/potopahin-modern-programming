@@ -77,3 +77,4 @@ MODULE ModernProcedures01;
 END ModernProcedures01.
 
 (!)ModernProcedures01.Do 4 4 2 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1
+(!)ModernProcedures01.Do 3 5 2 0 0 0 1 1 1 1 1 1 1 0 1 0 1 1
