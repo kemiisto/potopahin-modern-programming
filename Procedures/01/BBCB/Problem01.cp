@@ -6,6 +6,7 @@ MODULE ModernProcedures01;
   VAR
     a: ARRAY 10, 10 OF INTEGER;
     i, j, m, n, l: INTEGER;
+    notFound: BOOLEAN;
     
     (* 
       Проверяет, является ли квадратная подматрица матрицы a размером l единичной.
@@ -48,9 +49,15 @@ MODULE ModernProcedures01;
       END;
     END;
     
-    FOR i := 0 TO m - l DO
-      FOR j := 0 TO n - l DO
+    notFound := TRUE;
+    i := 0;
+    WHILE notFound & (i <= m - l) DO
+      j := 0;
+      WHILE notFound & (j <= n - l) DO
         IF CheckSquare(i, j) THEN
+          notFound := FALSE;
+          StdLog.String("Да.");
+          StdLog.Ln;
           StdLog.String("(");
           StdLog.Int(i);
           StdLog.String(",");
@@ -58,10 +65,15 @@ MODULE ModernProcedures01;
           StdLog.String(" )");
           StdLog.Ln;
         END;
+        j := j + 1;
       END;
+      i := i + 1;
+    END;
+    IF notFound THEN
+      StdLog.String("Нет.");
     END;
   END Do;
   
 END ModernProcedures01.
 
-(!) ModernProcedures01.Do 4 4 2 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1
+(!)ModernProcedures01.Do 4 4 2 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1
