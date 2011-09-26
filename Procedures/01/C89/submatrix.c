@@ -5,7 +5,7 @@ typedef struct {int data[0][0];} Array2d;
 
 int main() 
 {
-    // read data from stdin
+    /* read data from stdin */
     int m, n, l;
     
     if (3 != scanf("%d %d %d", &m, &n, &l))
