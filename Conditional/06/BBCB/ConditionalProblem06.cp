@@ -1,6 +1,6 @@
 MODULE ModernConditional06;
 
-  IMPORT StdLog, In, Math;
+  IMPORT StdLog, In;
   
   PROCEDURE Do*;
   VAR
