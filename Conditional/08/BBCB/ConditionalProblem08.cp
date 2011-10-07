@@ -42,10 +42,6 @@ MODULE ModernConditional08;
 
     IF ~flag THEN
       StdLog.String("Нет");
-    ELSIF d1 = 0 THEN
-      StdLog.String("Да, тривиальный случай, три одинаковых числа");
-    ELSIF d1 = 1 THEN
-      StdLog.String("Да, тривиальный случай, шаг = 1");
     ELSE
       StdLog.String("Да, максимальный шаг = ");
       StdLog.Int(d1);
