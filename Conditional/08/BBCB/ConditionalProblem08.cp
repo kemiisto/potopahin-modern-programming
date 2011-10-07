@@ -4,8 +4,10 @@ MODULE ModernConditional08;
   
   PROCEDURE Do*;
   VAR
-    a, b, c, t: INTEGER;
+    a, b, c, d1, d2, t: INTEGER;
+    flag: BOOLEAN;
   BEGIN
+    flag := TRUE;
     StdLog.Clear;
     In.Open;
 
@@ -25,11 +27,30 @@ MODULE ModernConditional08;
       c := t;
     END;
 
-    IF c - b = b - a THEN
-      StdLog.String("Да.");
+    d1 := ABS(a - b);
+    d2 := ABS(b - c);    
+
+    IF (d1 # d2) & (d1 = 0) THEN
+      flag := FALSE;
     ELSE
-      StdLog.String("Нет.");
+      WHILE d2 # 0 DO
+        t := d1 MOD d2;
+        d1 := d2;
+        d2 := t;
+      END;
     END;
+
+    IF ~flag THEN
+      StdLog.String("Нет");
+    ELSIF d1 = 0 THEN
+      StdLog.String("Да, тривиальный случай, три одинаковых числа");
+    ELSIF d1 = 1 THEN
+      StdLog.String("Да, тривиальный случай, шаг = 1");
+    ELSE
+      StdLog.String("Да, максимальный шаг = ");
+      StdLog.Int(d1);
+    END;
+
   END Do;
   
 END ModernConditional08.
