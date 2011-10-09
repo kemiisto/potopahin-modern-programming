@@ -30,7 +30,7 @@ MODULE ModernConditional08;
     d1 := ABS(a - b);
     d2 := ABS(b - c);    
 
-    IF (d1 # d2) & (d1 = 0) THEN
+    IF (d1 # d2) & ((d1 = 0) OR (d2 = 0)) THEN
       flag := FALSE;
     ELSE
       WHILE d2 # 0 DO
@@ -54,3 +54,7 @@ END ModernConditional08.
 (!)ModernConditional08.Do 1 2 3
 (!)ModernConditional08.Do 6 2 4
 (!)ModernConditional08.Do 4 6 3
+(!)ModernConditional08.Do 1 1 1
+(!)ModernConditional08.Do 1 2 1
+(!)ModernConditional08.Do 1 1 2
+(!)ModernConditional08.Do 1 2 2
