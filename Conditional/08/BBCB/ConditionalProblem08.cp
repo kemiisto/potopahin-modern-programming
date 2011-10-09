@@ -5,9 +5,7 @@ MODULE ModernConditional08;
   PROCEDURE Do*;
   VAR
     a, b, c, d1, d2, t: INTEGER;
-    flag: BOOLEAN;
   BEGIN
-    flag := TRUE;
     StdLog.Clear;
     In.Open;
 
@@ -27,22 +25,23 @@ MODULE ModernConditional08;
       c := t;
     END;
 
-    d1 := ABS(a - b);
-    d2 := ABS(b - c);    
+    IF a > b THEN
+      t := a;
+      a := b;
+      b := t;
+    END;
+
+    d1 := b - a;
+    d2 := c - b;
 
     IF (d1 # d2) & ((d1 = 0) OR (d2 = 0)) THEN
-      flag := FALSE;
+      StdLog.String("Нет");
     ELSE
       WHILE d2 # 0 DO
         t := d1 MOD d2;
         d1 := d2;
         d2 := t;
       END;
-    END;
-
-    IF ~flag THEN
-      StdLog.String("Нет");
-    ELSE
       StdLog.String("Да, максимальный шаг = ");
       StdLog.Int(d1);
     END;
