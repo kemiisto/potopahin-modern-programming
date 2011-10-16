@@ -6,4 +6,4 @@
 
 ISBN 978-5-94074-665-2
 
-http://findbook.ru/search/d1?isbn=9785940746652
+[Поиск книги в российских Интернет-магазинах.](http://findbook.ru/search/d1?isbn=9785940746652&r=0&s=1&viewsize=15&startidx=0)
