@@ -16,15 +16,15 @@ MODULE ModernConditional06;
     In.Int(l);
 
     IF l < a THEN
-      StdLog.Int(0);
-    ELSIF l < b THEN
       StdLog.Int(1);
-    ELSIF l < c THEN
+    ELSIF l < b THEN
       StdLog.Int(2);
-    ELSIF l < d THEN
+    ELSIF l < c THEN
       StdLog.Int(3);
-    ELSE
+    ELSIF l < d THEN
       StdLog.Int(4);
+    ELSE
+      StdLog.Int(5);
     END;
   END Do;
   
