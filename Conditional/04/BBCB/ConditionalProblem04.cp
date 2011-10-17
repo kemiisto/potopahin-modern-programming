@@ -10,11 +10,12 @@ MODULE ModernConditional04;
     In.Open;
 
     sum := 0;
-    WHILE In.Done DO
-      In.Int(n);
-      IF In.Done & (n MOD 2 = 0) THEN
+    In.Int(n);
+    WHILE In.Done DO  
+      IF n MOD 2 = 0 THEN
         sum := sum + n;
       END;
+      In.Int(n);
     END;
 
     StdLog.Int(sum);
