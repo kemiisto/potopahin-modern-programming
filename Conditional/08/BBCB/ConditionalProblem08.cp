@@ -1,3 +1,20 @@
+(*
+  Если числа (a0, b0, c0) упорядочить по возрастанию (a, b, c), 
+  а затем вычислить d1=b-a и d2=c-b, то возможно четыре случая:
+
+      d1  d2
+  1)  x   y   a < b < c
+  2)  0   0   a = b = c
+  3)  0   x   a = b < c
+  4)  x   0   a < c = b
+ 
+  В первых двух случаях числа образуют арифметичсекую прогрессию, 
+  в последних двух - нет.
+
+  Случай 1) соответсвует прогресии с шагом НОД(d1, d2).
+  Случай 2) тривиальный. Шаг прогресии = 0. 
+  
+*)
 MODULE ModernConditional08;
 
   IMPORT StdLog, In;
@@ -34,8 +51,12 @@ MODULE ModernConditional08;
     d1 := b - a;
     d2 := c - b;
 
-    IF (d1 # d2) & ((d1 = 0) OR (d2 = 0)) THEN
-      StdLog.String("Нет");
+    IF (d1 = 0) OR (d2 = 0) THEN
+      IF d1 + d2 = 0 THEN
+        StdLog.String("Да, тривиальный случай, шаг = 0");
+      ELSE
+        StdLog.String("Нет");
+      END;
     ELSE
       WHILE d2 # 0 DO
         t := d1 MOD d2;
