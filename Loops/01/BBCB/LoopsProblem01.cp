@@ -1,6 +1,6 @@
 MODULE ModernLoops01;
 
-  IMPORT StdLog, In, Math;
+  IMPORT StdLog, In;
   
   PROCEDURE Do*;
   VAR
