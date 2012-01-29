@@ -31,3 +31,6 @@ MODULE ModernLoops06;
 END ModernLoops06.
 
 (!)ModernLoops06.Do 2 3
+(!)ModernLoops06.Do -2 3
+(!)ModernLoops06.Do 2 -3
+(!)ModernLoops06.Do -2 -3
