@@ -4,7 +4,7 @@ MODULE ModernConditional09;
   
   PROCEDURE Do*;
   VAR
-    a, b, c, d1, d2, t: INTEGER;
+    a, b, c, q1, q2, q: INTEGER;
   BEGIN
     StdLog.Clear;
     In.Open;
@@ -13,41 +13,16 @@ MODULE ModernConditional09;
     In.Int(b);
     In.Int(c);
 
-    IF ABS(a) > ABS(b) THEN
-      d1 := a DIV b;
-    ELSE
-      d1 := b DIV a;
-    END;
+    q1 := b DIV a;
+    q2 := c DIV b;
 
-    IF ABS(b) > ABS(c) THEN
-      d2 := b DIV c;
+    IF q1 = q2 THEN
+      StdLog.String('Да.');
     ELSE
-      d2 := c DIV b;
+      StdLog.String('Нет.');
     END;
-(*
-    IF a > b THEN
-      t := a;
-      a := b;
-      b := t;
-    END;
-*)
-    StdLog.Int(d1);
-    StdLog.Int(d2);
-    StdLog.Ln;
-
-    IF (d1 # d2) & ((d1 = 1) OR (d2 = 1)) THEN
-      StdLog.String("Нет");
-    ELSE
-      WHILE d2 # 0 DO
-        t := d1 MOD d2;
-        d1 := d2;
-        d2 := t;
-      END;
-      StdLog.String("Да, максимальный шаг = ");
-      StdLog.Int(d1);
-    END;
-  END Do;
+  END Do;
   
-END ModernConditional09.
+END ModernConditional09.
 
 (!)ModernConditional09.Do 1 2 4

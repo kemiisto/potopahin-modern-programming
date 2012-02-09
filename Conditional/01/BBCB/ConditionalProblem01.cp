@@ -12,7 +12,6 @@ MODULE ModernConditional01;
     FOR i := 2 TO SHORT(ENTIER(Math.Sqrt(n))) DO
       IF n MOD i = 0 THEN
         StdLog.Int(i);
-        StdLog.String(" и");
         StdLog.Int(n DIV i);
         StdLog.Ln;
       END;
