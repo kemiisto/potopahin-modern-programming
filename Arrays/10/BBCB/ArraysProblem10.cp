@@ -41,4 +41,4 @@ END ModernArrays10.
 
 (!)ModernArrays10.Do 4 abcd abcd
 (!)ModernArrays10.Do 4 abcd abdc
-(!)ModernArrays10.Do 4 bacd abсd
+(!)ModernArrays10.Do 4 bacd abcd
