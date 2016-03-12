@@ -1,9 +1,10 @@
-with Ada.Text_IO, Ada.Integer_Text_IO;
+with Ada.Text_IO;
+with Ada.Integer_Text_IO;
 
 procedure Loops_Problem_01 is
   
-  procedure Do_Sum(N : Integer) is
-    I, Sum : Integer;
+  procedure Do_Sum(N : Natural) is
+    I, Sum : Natural;
   begin -- Do_Sum
     Sum := 0;
     for I in 1 .. N loop
