@@ -1,3 +1,4 @@
+with Ada.Command_Line;
 with Ada.Text_IO;
 with Ada.Integer_Text_IO;
 
@@ -17,7 +18,5 @@ procedure Loops_Problem_03 is
   end Do_Problem;
   
 begin -- Loops_Problem_03
-  Do_Problem(12);
-  Do_Problem(20);
-  Do_Problem(30);
+  Do_Problem(Integer'Value(Ada.Command_Line.Argument(1)));
 end Loops_Problem_03;
