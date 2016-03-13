@@ -35,6 +35,7 @@ MODULE ModernLoops01;
   
 END ModernLoops01.
 
+(!)ModernLoops01.Do 0
 (!)ModernLoops01.Do 1
 (!)ModernLoops01.Do 10
 (!)ModernLoops01.Do 100
