@@ -22,3 +22,5 @@ MODULE ModernLoops03;
 END ModernLoops03.
 
 (!)ModernLoops03.Do 12
+(!)ModernLoops03.Do 20
+(!)ModernLoops03.Do 30

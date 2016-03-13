@@ -3,7 +3,7 @@ with Ada.Integer_Text_IO;
 
 procedure Loops_Problem_01 is
   
-  procedure Do_Sum(N : Natural) is
+  procedure Do_Problem(N : Natural) is
     I, Sum : Natural;
   begin -- Do_Sum
     Sum := 0;
@@ -30,10 +30,10 @@ procedure Loops_Problem_01 is
     Ada.Integer_Text_IO.Put(Sum);
     
     Ada.Text_IO.New_Line;
-  end Do_Sum;
+  end Do_Problem;
   
 begin -- Loops_Problem_01
-  Do_Sum(1);
-  Do_Sum(10);
-  Do_Sum(100);
+  Do_Problem(1);
+  Do_Problem(10);
+  Do_Problem(100);
 end Loops_Problem_01;
