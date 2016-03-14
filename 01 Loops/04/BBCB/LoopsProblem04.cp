@@ -16,6 +16,7 @@ MODULE ModernLoops04;
       i := i + 1;
       sum := sum + i * i;
     END;
+    sum := sum - i * i;
     StdLog.Int(sum);
 
     i := 0;
@@ -24,9 +25,12 @@ MODULE ModernLoops04;
       i := i + 1;
       sum := sum + i * i;
     UNTIL sum > w;
+    sum := sum - i * i;
     StdLog.Int(sum);
   END Do;
   
 END ModernLoops04.
 
+(!)ModernLoops04.Do 50
 (!)ModernLoops04.Do 90
+(!)ModernLoops04.Do 204
