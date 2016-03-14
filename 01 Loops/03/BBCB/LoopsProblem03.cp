@@ -16,6 +16,7 @@ MODULE ModernLoops03;
       i := i + 1;
       sum := sum + i * 2;
     END;
+    
     StdLog.Int(i);
   END Do;
   

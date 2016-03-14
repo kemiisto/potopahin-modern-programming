@@ -1,4 +1,3 @@
-with Ada.Text_IO;
 with Ada.Integer_Text_IO;
 
 procedure Loops_Problem_03 is

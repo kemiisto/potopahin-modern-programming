@@ -16,6 +16,7 @@ MODULE ModernLoops02;
       r := r * a;
       b := b - 1;
     END;
+    
     StdLog.Int(r);
   END Do;
   
