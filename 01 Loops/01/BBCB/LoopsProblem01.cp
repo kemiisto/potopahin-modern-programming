@@ -17,25 +17,24 @@ MODULE ModernLoops01;
     StdLog.Int(sum);
 
     sum := 0;
-    i := 0;
-    WHILE i < n DO
-      i := i + 1;
+    i := 1;
+    WHILE i <= n DO
       sum := sum + i;
+      i := i + 1;
     END;
     StdLog.Int(sum);
 
     sum := 0;
-    i := 0;
+    i := 1;
     REPEAT
-      i := i + 1;
       sum := sum + i;
-    UNTIL i >= n;
+      i := i + 1;
+    UNTIL i > n;
     StdLog.Int(sum);
   END Do;
   
 END ModernLoops01.
 
-(!)ModernLoops01.Do 0
 (!)ModernLoops01.Do 1
 (!)ModernLoops01.Do 10
 (!)ModernLoops01.Do 100
