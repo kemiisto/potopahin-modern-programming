@@ -19,4 +19,12 @@
     <td>2 3 2</td>
     <td>14</td>
   </tr>
+  <tr>
+    <td>-2 3 2</td>
+    <td>-14</td>
+  </tr>
+  <tr>
+    <td>2 3 -2</td>
+    <td>6</td>
+  </tr>
 </table>
