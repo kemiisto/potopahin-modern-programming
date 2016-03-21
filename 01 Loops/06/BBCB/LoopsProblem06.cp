@@ -4,7 +4,7 @@ MODULE ModernLoops06;
   
   PROCEDURE Do*;
   VAR
-    a, b, r, sign: INTEGER;
+    a, b, result, sign: INTEGER;
   BEGIN
     StdLog.Clear;
     In.Open;
@@ -19,13 +19,14 @@ MODULE ModernLoops06;
 
     a := ABS(a);
     b := ABS(b);
-    r := a;
+    result := a;
     WHILE b > 1 DO
-      r := r + a;
+      result := result + a;
       b := b - 1;
     END;
-    r := sign * r;
-    StdLog.Int(r);
+    result := sign * result;
+
+    StdLog.Int(result);
   END Do;
   
 END ModernLoops06.
