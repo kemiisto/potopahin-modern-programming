@@ -1,6 +1,6 @@
 with Ada.Integer_Text_IO;
 
-procedure loops_problem_07 is
+procedure Loops_Problem_07 is
   A1, A2, N, T : Integer;
 begin
   Ada.Integer_Text_IO.Get(N);
@@ -16,4 +16,4 @@ begin
     A1 := T;
     Ada.Integer_Text_IO.Put(A2);
   end loop;
-end loops_problem_07;
+end Loops_Problem_07;

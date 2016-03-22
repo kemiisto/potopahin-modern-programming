@@ -1,6 +1,6 @@
 with Ada.Integer_Text_IO;
 
-procedure loops_problem_06 is
+procedure Loops_Problem_06 is
   A, B, Result, Sign : Integer;
 begin
   Ada.Integer_Text_IO.Get(A);
@@ -22,4 +22,4 @@ begin
   Result := Sign * Result;
 
   Ada.Integer_Text_IO.Put(Result);
-end loops_problem_06;
+end Loops_Problem_06;
