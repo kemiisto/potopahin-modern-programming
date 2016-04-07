@@ -32,6 +32,7 @@ MODULE ModernLoops08;
     END;
     a := signr * a;
     q := signq * q;
+    
     StdLog.Int(q);
     StdLog.Int(a);
   END Do;
