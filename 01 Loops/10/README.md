@@ -19,4 +19,12 @@ k.
     <td>2 2 1 2</td>
     <td>5</td>
   </tr>
+  <tr>
+    <td>2 2 1 3</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>2 4 1 2</td>
+    <td>6</td>
+  </tr>
 </table>

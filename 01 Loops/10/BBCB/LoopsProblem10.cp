@@ -19,6 +19,7 @@ MODULE ModernLoops10;
       b := b * q;
       k := k + 1;
     END;
+    
     StdLog.Int(k);
   END Do;
   
