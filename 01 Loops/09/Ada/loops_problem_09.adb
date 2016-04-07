@@ -1,6 +1,6 @@
 with Ada.Integer_Text_IO;
 
-procedure loops_problem_09 is
+procedure Loops_Problem_09 is
   N, Sum : Integer;
 begin
   Ada.Integer_Text_IO.Get(N);
@@ -11,4 +11,4 @@ begin
   end loop;
 
   Ada.Integer_Text_IO.Put(Sum);
-end loops_problem_09;
+end Loops_Problem_09;
