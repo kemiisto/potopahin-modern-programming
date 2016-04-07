@@ -14,6 +14,7 @@ MODULE ModernLoops09;
     FOR i := 1 TO n DO
       sum := sum + (2 * i - 1);
     END;
+    
     StdLog.Int(sum);
   END Do;
   
