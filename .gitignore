@@ -1,3 +1,5 @@
 *.ali
 *.exe
 *.o
+test.py
+test.log

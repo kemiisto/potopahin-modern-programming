@@ -12,8 +12,9 @@ MODULE ModernConditional01;
     FOR i := 2 TO SHORT(ENTIER(Math.Sqrt(n))) DO
       IF n MOD i = 0 THEN
         StdLog.Int(i);
-        StdLog.Int(n DIV i);
-        StdLog.Ln;
+        IF (n DIV i) # i THEN
+          StdLog.Int(n DIV i);
+        END;
       END;
     END;
   END Do;
@@ -21,3 +22,5 @@ MODULE ModernConditional01;
 END ModernConditional01.
 
 (!)ModernConditional01.Do 20
+(!)ModernConditional01.Do 36
+(!)ModernConditional01.Do 37
