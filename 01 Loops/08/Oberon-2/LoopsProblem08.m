@@ -32,6 +32,6 @@ BEGIN
   a := signr * a;
   q := signq * q;
 
-  Out.Int(q, 0);
+  Out.Int(q, 0); Out.Char(" ");
   Out.Int(a, 0);
 END LoopsProblem08.
